@@ -1,0 +1,170 @@
+{
+  "format_version": "1.0",
+  "provider_schemas": {
+    "registry.terraform.io/datadog/datadog": {
+      "provider": {
+        "version": 0,
+        "attributes": {},
+        "block_types": {}
+      },
+      "resource_schemas": {
+        "datadog_monitor": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "type": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "message": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "query": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "tags": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "datadog_dashboard": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "title": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "description": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "layout_type": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "widget": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "datadog_synthetics_test": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "type": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "status": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "locations": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "tags": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "datadog_logs_archive": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "query": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "datadog_user": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "email": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "roles": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        }
+      },
+      "data_source_schemas": {}
+    }
+  }
+}
