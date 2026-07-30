@@ -4,8 +4,4 @@
 (deflava-provider
   :datadog
   :resources
-  (:datadog-dashboard
-    :datadog-logs-archive
-    :datadog-monitor
-    :datadog-synthetics-test
-    :datadog-user))
+  (:datadog-dashboard :datadog-logs-archive :datadog-monitor :datadog-synthetics-test :datadog-user))
